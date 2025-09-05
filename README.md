@@ -83,7 +83,8 @@ customers from “USA” top with invoice spending money.
 
 ------
 
-📧 Contact
-👩‍💻 Your Name
-📩 Email: aakshaya.ashok@gmail.com
-🌐 GitHub:[http:/AkshayaAshok28]
+## 📧 Contact
+
+- **👩‍💻 Your Name:** Akshaya A
+- **📩 Email:** aakshaya.ashok@gmail.com
+- **🌐 GitHub:** [http:/AkshayaAshok28]
