@@ -1,0 +1,18 @@
+SELECT * FROM ARTIST;/*ARTIST ID */
+SELECT * FROM ALBUM; /*ALBUM ID */
+SELECT * FROM TRACK; /*GENRE ID */
+SELECT * FROM GENRE; 
+
+
+/*Q2: Identify the top 10 rock artists based on track count.
+o Hint: Use joins across artist, album, and track and filter by the genre Rock.
+Count tracks per artist.*/
+SELECT A.ARTIST_ID, A.NAME,COUNT(T.TRACK_ID) AS TRACK_COUNT 
+FROM ARTIST A JOIN ALBUM AL ON A.ARTIST_ID=AL.ARTIST_ID
+JOIN TRACK T ON AL.ALBUM_ID= T.ALBUM_ID 
+JOIN GENRE G ON T.GENRE_ID=G.GENRE_ID
+WHERE G.NAME="ROCK" 
+GROUP BY A.ARTIST_ID, A.NAME ORDER BY TRACK_COUNT DESC LIMIT 10;
+
+
+
